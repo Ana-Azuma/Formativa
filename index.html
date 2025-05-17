@@ -1,100 +1,228 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechNova - Inovação em Tecnologia</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechNova - Soluções Inteligentes para Fornecedores de TI</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
 
-    <header>
-        <h1>TechNova</h1>
-        <nav>
-            <ul>
-                <li><a href="#missao">Missão</a></li>
-                <li><a href="#visao">Visão</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
-                <li><a href="#newsletter">Newsletter</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="newsletter">
-        <h2>Inscreva-se para novidades!</h2>
-        <form>
-            <input type="email" placeholder="Digite seu e-mail" required>
-            <button type="submit">Inscrever</button>
-        </form>
-        <p id="msgSucesso" style="display: none;">Inscrição realizada com sucesso!</p>
+  <header>
+    <h1>TechNova</h1>
+    <button class="menu-toggle" aria-label="Menu" id="menu-toggle">
+      <i class="fas fa-ellipsis-h"></i>
+    </button>
+    <nav id="main-nav">
+      <ul>
+        <li><a href="#missao">Missão</a></li>
+        <li><a href="#visao">Visão</a></li>
+        <li><a href="#valores">Valores</a></li>
+        <li><a href="#funcionalidades">Funcionalidades</a></li>
+        <li><a href="#parceiros">Parceiros</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#newsletter">Newsletter</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2><span class="highlight">Tecnologia</span> que Conecta Fornecedores ao Futuro</h2>
+      <p>Automação, integração e performance para quem entrega inovação todos os dias. Torne-se um parceiro TechNova.</p>
+      <a href="#funcionalidades" class="hero-btn">Conheça as soluções</a>
+    </div>
+  </section>
+
+  <main>
+
+    <section id="missao" class="content-section">
+      <div class="text">
+        <h2>🌟 Nossa Missão</h2>
+        <p>Desenvolver soluções tecnológicas personalizadas que impulsionam a transformação digital dos nossos clientes, entregando sistemas, aplicativos e plataformas inovadoras que otimizam processos e geram resultados reais.</p>
+      </div>
+      <div class="image">
+        <img src="img/2.jpg" alt="Missão TechNova" />
+      </div>
     </section>
-    
-    <section class="hero">
-        <h2>Bem-vindo à TechNova</h2>
-        <p>Transformando o futuro da tecnologia com inovação e paixão.</p>
+
+    <section id="visao" class="content-section reverse">
+      <div class="text">
+        <h2>🚀 Nossa Visão</h2>
+        <p>Ser referência nacional em desenvolvimento de software sob medida e inovação digital, reconhecida pela qualidade, agilidade e impacto positivo nos negócios de nossos clientes.</p>
+      </div>
+      <div class="image">
+        <img src="img/5.jpg" alt="Visão TechNova" />
+      </div>
     </section>
 
-    <main>
-        <section id="missao" class="content-section">
-            <div class="text">
-                <h2>🌟 Nossa Missão</h2>
-                <p>Promover soluções tecnológicas inovadoras que transformem o mundo, facilitando a vida das pessoas e impulsionando negócios rumo ao futuro.</p>
-            </div>
-            <div class="image">
-                <img src="img\4.jpg" alt="Missão TechNova">
-            </div>
-        </section>
+    <section id="valores" class="content-section">
+      <div class="text">
+        <h2>💡 Nossos Valores</h2>
+        <ul>
+          <li>Inovação orientada a resultados;</li>
+          <li>Transparência com parceiros;</li>
+          <li>Segurança e confiabilidade;</li>
+          <li>Integração aberta e colaborativa;</li>
+          <li>Foco no sucesso do cliente.</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="img/3.jpg" alt="Valores TechNova" />
+      </div>
+    </section>
 
-        <section id="visao" class="content-section reverse">
-            <div class="text">
-                <h2>🚀 Nossa Visão</h2>
-                <p>Ser referência mundial em tecnologia de ponta, reconhecida pela criatividade, responsabilidade social e excelência em inovação.</p>
-            </div>
-            <div class="image">
-                <img src="img\2.jpg" alt="Visão TechNova">
-            </div>
-        </section>
+    <section id="funcionalidades" class="content-section reverse">
+      <div class="text">
+        <h2>🔧 Funcionalidades para Fornecedores</h2>
+        <ul>
+          <li><i class="fa-solid fa-code"></i> <strong>Desenvolvimento de Sistemas Sob Medida:</strong> Soluções personalizadas que transformam seu negócio.</li>
+          <li><i class="fa-solid fa-user-check"></i> <strong>Criação de Aplicativos Mobile:</strong> Leve sua empresa para o bolso do cliente com apps modernos e funcionais.</li>
+          <li><i class="fa-solid fa-chart-line"></i> <strong>Aplicações Web Inovadoras:</strong> Plataformas online que otimizam processos e aumentam sua produtividade.</li>
+          <li><i class="fa-solid fa-headset"></i> <strong>Manutenção e Atualização Ágil:</strong> Garantia de sistemas sempre eficientes e atualizados.</li>
+          <li><i class="fa-solid fa-file-contract"></i> <strong>Integração de Sistemas:</strong> Conectamos suas ferramentas para um fluxo de trabalho inteligente e automatizado.</li>
+        </ul>
+      </div>
+      <div class="image">
+        <img src="img/4.jpg" alt="Funcionalidades TechNova" />
+      </div>
+    </section>
 
-        <section id="valores" class="content-section">
-            <div class="text">
-                <h2>💡 Nossos Valores</h2>
-                <ul>
-                    <li>Inovação constante</li>
-                    <li>Ética e responsabilidade</li>
-                    <li>Foco no cliente</li>
-                    <li>Compromisso com a excelência</li>
-                    <li>Colaboração e respeito</li>
-                </ul>
-            </div>
-            <div class="image">
-                <img src="img\3.jpg" alt="Valores TechNova">
-            </div>
-        </section>
+    <section id="parceiros" class="content-section parceiros">
+      <h2>🤝 Nossos Parceiros</h2>
+      <div class="logos">
+        <img src="img/6.jpg" alt="GOV" />
+        <img src="img/7.jpg" alt="AMBEV" />
+        <img src="img/8.jpg" alt="SENAI" />
+        <img src="img/9.jpg" alt="CNPEM" />
+      </div>
+    </section>
 
-        <section id="funcionalidades" class="content-section reverse">
-            <div class="text">
-                <h2>🔧 Funcionalidades</h2>
-                <p>Nosso site oferece uma navegação intuitiva, inscrição em newsletters com validação em tempo real, e integração com ferramentas de marketing para manter nossos usuários sempre informados e engajados!</p>
-            </div>
-            <div class="image">
-                <img src="img\5.jpg" alt="Funcionalidades TechNova">
-            </div>
-        </section>
+    <section id="depoimentos" class="depoimentos-section">
+      <h2>💬 O que dizem nossos clientes</h2>
+      <div class="depoimentos">
+        <div class="card">
+          <p>"A parceria com essa equipe foi fundamental para o sucesso do nosso projeto. A agilidade e qualidade no desenvolvimento do sistema superaram nossas expectativas, trazendo ganhos reais para a operação."</p>
+          <span>— Gerente de TI, Ambev</span>
+        </div>
+        <div class="card">
+          <p>"O suporte técnico e a solução personalizada atenderam perfeitamente às demandas da nossa unidade. Com o novo sistema, conseguimos otimizar o processo de matrícula e melhorar a comunicação interna."</p>
+          <span>— Coordenador de Projetos, SENAI</span>
+        </div>
+        <div class="card">
+          <p>"A equipe demonstrou profundo conhecimento técnico e compromisso com prazos, entregando um software robusto e seguro que atende às rigorosas exigências do nosso centro de pesquisa."</p>
+          <span>— Diretor de Tecnologia, CNPEM</span>
+        </div>
+      </div>
+    </section>
 
-    </main>
+    <section id="login" class="login-section">
+      <h2>🔐 Acesso para Fornecedores</h2>
+      <form class="login-form">
+        <label for="email-login">E-mail</label>
+        <input type="email" id="email-login" placeholder="seu@empresa.com" required />
 
-    <footer>
-        <p>&copy; 2025 TechNova. Todos os direitos reservados.</p>
-        <nav>
-            <ul>
-                <li><a href="#missao">Missão</a></li>
-                <li><a href="#visao">Visão</a></li>
-                <li><a href="#valores">Valores</a></li>
-                <li><a href="#funcionalidades">Funcionalidades</a></li>
-            </ul>
-        </nav>
-    </footer>
+        <label for="senha-login">Senha</label>
+        <input type="password" id="senha-login" placeholder="••••••••" required />
+
+        <button type="submit">Entrar</button>
+        <p class="cadastro-msg">Não tem cadastro? <a href="#">Registre-se aqui</a></p>
+      </form>
+    </section>
+
+  </main>
+
+  <section id="newsletter">
+    <h2>Receba nossas soluções direto no seu e-mail!</h2>
+    <form>
+      <label for="email" class="sr-only">E-mail</label>
+      <input type="email" id="email" placeholder="Digite seu e-mail profissional" required />
+      <button type="submit">Inscrever</button>
+    </form>
+    <p id="msgSucesso" style="display: none;">Inscrição confirmada com sucesso!</p>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3>TechNova</h3>
+        <p>Conectando inovação e tecnologia para o sucesso do seu negócio.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Links Úteis</h3>
+        <ul>
+          <li><a href="#missao">Missão</a></li>
+          <li><a href="#visao">Visão</a></li>
+          <li><a href="#valores">Valores</a></li>
+          <li><a href="#funcionalidades">Funcionalidades</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#login">Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Contato</h3>
+        <p><i class="fa-solid fa-phone"></i> +55 (11) 99999-9999</p>
+        <p><i class="fa-solid fa-envelope"></i> contato@technova.com.br</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 TechNova. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Script para o menu móvel com três pontinhos
+    const menuToggle = document.getElementById('menu-toggle');
+    const mainNav = document.getElementById('main-nav');
+
+    menuToggle.addEventListener('click', function() {
+      mainNav.classList.toggle('active');
+      
+      // Alterna entre o ícone de três pontinhos e X quando o menu é aberto/fechado
+      const icon = menuToggle.querySelector('i');
+      if (icon.classList.contains('fa-ellipsis-h')) {
+        icon.classList.remove('fa-ellipsis-h');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-ellipsis-h');
+      }
+    });
+
+    // Fecha o menu quando um link é clicado
+    const navLinks = document.querySelectorAll('#main-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-ellipsis-h');
+      });
+    });
+
+    // Script para o formulário de newsletter
+    const form = document.querySelector('#newsletter form');
+    const input = form.querySelector('input[type="email"]');
+    const msg = document.getElementById('msgSucesso');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      if (input.value.trim() !== '') {
+        msg.style.display = 'block';
+        input.value = '';
+      }
+    });
+  </script>
 
 </body>
 </html>
